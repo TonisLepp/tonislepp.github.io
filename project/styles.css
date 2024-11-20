@@ -1,0 +1,152 @@
+nav {
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: darkcyan;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 40rem;
+    font-family: "Lucida Sans";
+    background-color: #e1f3f5;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 3.5rem auto 4rem;
+}
+
+#dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-gap: .8rem;
+    grid-row-gap: .8rem;
+}
+
+form {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form .name_input {
+    width: 20rem;
+    line-height: 1.9rem;
+}
+
+form .name_label {
+    width: 10rem;
+    line-height: 2rem;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+button {
+    padding: 0.3rem;
+    border: none;
+    cursor: pointer;
+    width: 4rem;
+    font-size: 0.9rem;
+    background-color: #bad6d4;
+}
+
+.employee, .task {
+    padding: 0.4rem 0.4rem 1rem 0.4rem;
+    border: 1px solid;
+    border-radius: .2rem;
+    min-height: 4rem;
+    margin-bottom: .5rem;
+}
+
+.employee img {
+    width: 70px;
+    float: left;
+    margin-right: 0.5rem;
+    border-radius: .2rem;
+}
+
+#dashboard .task {
+    max-width: 23rem;
+}
+
+#dashboard .panel:first-child {
+    width: 14rem;
+}
+
+#dashboard .panel:last-child {
+    flex-grow: 1;
+    min-width: 15rem;
+
+}
+
+.panel {
+    border: 0px solid;
+    border-radius: .2rem;
+}
+
+.panel_header {
+    padding: .5rem;
+    border-bottom: 1px solid;
+    margin-bottom: 1rem;
+    background-color: #bad6d4;
+}
+
+.panel_item {
+    padding: .4rem;
+}
+
+footer {
+    padding: .5rem;
+    border-top: 1px solid;
+    margin-top: 1rem;
+}
+
+.editLink {
+    float: right;
+}
+
+.delete button{
+    background-color: #a83c2c;
+    color: white;
+}
+
+
+.error-popup {
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 95%;
+}
+.error-popup.show {
+    display: block;
+}
+
+.success-popup {
+    display: none;
+    min-width: 10rem;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #6fa84d;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 95%;
+    z-index: 1000;
+}
+.success-popup.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,47 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-table, th, td {
-  border: 1px solid black;
-}
-</style>
+    <meta charset="UTF-8">
+    <title>Avaleht</title>
+    <link rel="stylesheet" href="project/styles.css">
 </head>
-<body>
-<h1>Kontrolltöö nädal 6</h1>
-<p>Mina olen TalTech'i tudeng, minu tudengikood on: 223290</p>
-
-
-<h3>Siin olen välja toonud lihtsa tõeväärtustabeli.</h3>
-<table>
-  <tr>
-    <th>X1</th>
-    <th>X2</th>
-    <th>X1 v X2</th>
-  </tr>
-  <tr>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>0</td>
-    <td>1</td>
-    <td>1</td>
-  </tr>
-  <tr>
-	<td>1</td>
-	<td>0</td>
-	<td>1</td>
-  </tr>
-  <tr>
-	<td>1</td>
-	<td>1</td>
-	<td>1</td>
-  </tr>
-</table> 
-<img src="http://cube.rider.biz/visualcube.php?fmt=svg&size=200&alg=BR2FU2B%27L2B2R2D2LF2D%27U2L2B%27F%27DRUB%27" alt="Pilt ruubiku kuubikust" width="300" height="300">
-<p>Ma tegelikult mõtlesin pikalt, et mida kõike ma võiksin selle lehega peale hakata. Otsustasin mitte üle pingutada ja valmis see, mida hetkel näete.</p>
-<a href="https://taltech.ee/">Siia vajutades saad ülikooli lehele.</a>
+<body id="dashboard-page">
+<nav>
+    <a href="" id="dashboard-link">Dashboard</a> |
+    <a href="project/employee-list.php" id="employee-list-link">Employees</a> |
+    <a href="project/employee-form.php" id="employee-form-link">Add Employee</a> |
+    <a href="project/task-list.php" id="task-list-link">Tasks</a> |
+    <a href="project/task-form.php" id="task-form-link">Add Task</a>
+</nav>
+<div id="dashboard">
+    <div class="panel">
+        <div class="panel_header">Employees</div>
+        <div class="panel_item">
+            <div class="employee">
+                <img src="project/pfps/profile.jpg" alt="profile picture">
+                <div class="name">Daisy Smith</div>
+                <br><span class="position">Manager</span>
+            </div>
+            <div class="employee">
+                <img src="project/pfps/profile.jpg" alt="profile picture">
+                <div class="name">James Adams</div>
+                <br><span class="position">Designer</span>
+            </div>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="panel_header">Tasks</div>
+        <div class="panel_item">
+            <div class="task">
+                Prevent clearing CSS added to node after filterByAll() in datatable filter.
+            </div>
+            <div class="task">
+                Menu thumbnails disappear when I click on profile page.
+            </div>
+        </div>
+    </div>
+</div>
+<footer>icd0007 Sample application</footer>
 </body>
 </html>
